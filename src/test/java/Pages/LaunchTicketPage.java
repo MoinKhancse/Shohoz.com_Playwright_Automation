@@ -77,6 +77,22 @@ public class LaunchTicketPage {
 		AGREE.click();
 		Thread.sleep(3000);
 		
+		ElementHandle Login = page.querySelector("//a[normalize-space()='Login']");
+		Login.click();
+		Thread.sleep(3000);
+		
+		ElementHandle mobile_number = page.querySelector("//input[@id='mobile_number']");
+		mobile_number.fill("01717511288");
+		Thread.sleep(3000);
+		
+		ElementHandle password = page.querySelector("//input[@id='password']");
+		password.fill("01717511288");
+		Thread.sleep(3000);
+		
+		ElementHandle submit = page.querySelector("//button[@type='submit']");
+		submit.click();
+		Thread.sleep(3000);
+		
 		ElementHandle dest_from = page.querySelector("//input[@id='dest_from']");
 		dest_from.hover();
 		dest_from.fill("Dhaka");
@@ -106,7 +122,22 @@ public class LaunchTicketPage {
 		passCase("You have Success Click");
 		Thread.sleep(2000);
 		passCaseWithSC("You have successfully click ", "Train_Ticket");
-			
+		
+		ElementHandle BOOK_NOW = page.querySelector("(//button[@type='button'][normalize-space()='BOOK NOW'])[1]");
+		BOOK_NOW.click();
+		Thread.sleep(2000);
+		
+		ElementHandle select = page.querySelector("//select[@id='select-bogie']");
+		select.selectOption("THA - 2 Seat(s)");
+		Thread.sleep(2000);
+		
+		ElementHandle THA = page.querySelector("//button[normalize-space()='THA-20']");
+		THA.click();
+		Thread.sleep(5000);
+		
+		ElementHandle PURCHASE = page.querySelector("//button[normalize-space()='CONTINUE PURCHASE']");
+		PURCHASE.click();
+		Thread.sleep(6000);
 		}
 
 }

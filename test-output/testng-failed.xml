@@ -6,7 +6,7 @@
       <class name="Tests.LaunchPageTest">
         <methods>
           <include name="openUrl"/>
-          <include name="buyTicket"/>
+          <include name="buyTrainTicket"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- Tests.LaunchPageTest -->
