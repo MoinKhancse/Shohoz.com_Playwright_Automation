@@ -107,7 +107,7 @@ public class LaunchTicketPage {
 		passCase("You have Success Click");
 		Thread.sleep(3000);
 		
-		ElementHandle dat = page.querySelector("//a[normalize-space()='24']");
+		ElementHandle dat = page.querySelector("//a[normalize-space()='27']");
 		dat.click();
 		passCase("You have Success Click");
 		Thread.sleep(3000);
@@ -123,15 +123,15 @@ public class LaunchTicketPage {
 		Thread.sleep(2000);
 		passCaseWithSC("You have successfully click ", "Train_Ticket");
 		
-		ElementHandle BOOK_NOW = page.querySelector("(//button[@type='button'][normalize-space()='BOOK NOW'])[1]");
+		ElementHandle BOOK_NOW = page.querySelector("(//button[@type='button'][normalize-space()='BOOK NOW'])[3]");
 		BOOK_NOW.click();
 		Thread.sleep(2000);
 		
 		ElementHandle select = page.querySelector("//select[@id='select-bogie']");
-		select.selectOption("THA - 2 Seat(s)");
+		select.selectOption("6");
 		Thread.sleep(2000);
 		
-		ElementHandle THA = page.querySelector("//button[normalize-space()='THA-20']");
+		ElementHandle THA = page.querySelector("//button[normalize-space()='THA-10']");
 		THA.click();
 		Thread.sleep(5000);
 		
