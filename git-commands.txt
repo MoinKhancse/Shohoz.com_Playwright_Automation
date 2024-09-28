@@ -1,0 +1,158 @@
+changes from my pc
+==============================================================================================
+GIT
+==============================================================================================
+-----------How to pull from any repository----------
+git init
+git clone https://github.com/easabbir/easabbir.github.io.git
+
+git config --global user.name "Sam Smith"
+git config --global user.email "sam@example.com"
+===============================================================================================
+git remote add origin https://github.com/easabbir/batch21Demo.git
+
+git remote -v
+
+git pull origin master 
+
+============================================================
+How to push to a remote repository
+
+Step: 0 Created a repository : https://github.com/easabbir/git-batch-demo.git
+Step: 1 Download git and install 
+Step: 2 Created a project with public/private
+
+Step: 3 Understand the commands from here
+https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+
+Step: 4 Tell git who u are
+git config --global user.name "Sam Smith"
+git config --global user.email "sam@example.com"
+
+Step: 5 Create Local repository after installing git in windows/linux/mac
+go to the folder in command line and below command
+git init
+
+Step: 6 Add files
+git add *
+
+Step: 7 Commit
+git status
+git commit -m "first commit"
+
+Step: 8 Add repository
+git remote add origin https://github.com/easabbir/git-batch-demo.git
+
+Step: 9 List all currently configured remote repositories:
+git remote -v
+
+Step: 9 Push code to repository to master
+generate token from github account
+
+git push origin master
+
+git push -u origin master
+
+========added later======
+git diff
+git log --oneline
+git checkout commitid
+
+remote
+git branch -r
+git branch -a
+git branch
+
+git branch branchname
+git checkout branchname
+git branch
+
+-------If problem faced----------
+git pull origin master --allow-unrelated-histories
+git pull origin --rebase master 
+git push -u origin master
+
+https://git-school.github.io/visualizing-git/
+
+If you want remove all local changes - including files that are untracked by git - from your working copy, simply stash them:
+git stash push --include-untracked
+
+If you don't need them anymore, you now can drop that stash:
+git stash drop
+
+Listing your stashes
+git stash list
+
+Retrieving stashed changes
+git stash apply and git stash pop
+A stash reapplies the changes while pop removes the changes from the stash and reapplies them to the working copy. Popping is preferred if you don't need the stashed changes to be reapplied more than once.
+git stash pop stash@{1} or
+git stash apply stash@{1}
+
+Cleaning up the stash
+It is good practice to remove stashes that are no longer needed. You must do this manually with the following commands:
+git stash clear empties the stash list by removing all the stashes.
+git stash drop <stash_id> deletes a particular stash from the stash list.
+REFERENCE: https://opensource.com/article/21/4/git-stash
+
+Downloading and pulling
+-----------------------
+Step: 9 Download from a repository (first time) otherwise git pull
+git clone 
+
+Step: 10 Take latest changes in the framework
+git pull origin master 
+
+Branches
+-----------------------------
+
+Step: 11 creating a new branch
+git checkout -b <branchname>
+
+Step: 12 Switching to a newly created branch
+git checkout <branchname>
+
+Step: 13 to list all the branch 
+git branch
+
+Step: 13 Push to the newly created branch
+git push origin <branchname>
+
+Step: 14 After the branch is ready to merge to master
+switch to master branch first: 	git checkout master
+get latest code: 	git pull origin master
+merge: 			git merge <branchname>
+
+
+Delete Branches
+-----------------------------
+git branch -d <branchname>
+
+Reset 
+------------------------
+git fetch origin
+git reset --hard origin/master
+git reset --hard HEAD
+
+--------add unnecessary file stash and pull from server--------
+git add * 
+git stash
+git pull
+
+
+Example of my student after git class
+[1]https://github.com/musthafiz/Load-testing-for-OpenCart-Website
+[2]https://github.com/Akash-Ahmed-CSE
+[3]https://github.com/Rasujon3/Jmeter_Performance_Testing_fakestoreapi
+
+
+ai site gulo diye creative readme file generate kora jay....
+md file er syntax jana na thakle ai generator site gulo helpful
+[1] https://rahuldkjain.github.io/gh-profile-readme-generator/
+[2]https://gprm.itsvg.in/
+[3]https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-personal-account-settings/about-your-personal-dashboard
+
+Professional git site
+https://github.com/dotnet/BenchmarkDotNet
+
+Readme file: https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
