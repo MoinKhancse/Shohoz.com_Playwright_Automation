@@ -110,6 +110,23 @@ git clone https://github.com/MoinKhancse/Shohoz.com_Playwright_Automation.git
 			<version>7.8.0</version>
 			<scope>test</scope>
 		</dependency>
+	<dependency>
+	    <groupId>org.apache.poi</groupId>
+	    <artifactId>poi</artifactId>
+	    <version>5.3.0</version>
+	</dependency>
+
+	<dependency>
+	    <groupId>com.aventstack</groupId>
+	    <artifactId>extentreports</artifactId>
+	    <version>5.1.2</version>
+	</dependency>
+
+	<dependency>
+	    <groupId>org.apache.poi</groupId>
+	    <artifactId>poi-ooxml</artifactId>
+	    <version>5.3.0</version>
+	</dependency>
 </dependencies>
 ```
 
